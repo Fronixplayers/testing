@@ -4,7 +4,6 @@
 }
 body{
 	background: url(bg_img.jpg) no-repeat;
-	background-size: cover;
 	align-items: center;
 	justify-content: center;
 	display: flex;
@@ -104,3 +103,4 @@ button:hover {
 p #message {
   color: red;
 }
+
