@@ -1,18 +1,29 @@
 <!DOCTYPE html>
+<!---Coding By CoderGirl | www.codinglabweb.com--->
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Validated Login Form</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login & Registration Form | CoderGirl</title>
+  <!---Custom CSS File--->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container">
-		<h1>Welcome to the paid video this code will be valid only for 24 Hours.</h1>
-		<p>Please enter the code which you get after paying to proceed:</p>
-		<input type="password" id="password" placeholder="Enter password">
-		<button onclick="checkPassword()">Submit</button>
-		<p id="message"></p>
-	</div>	
-	<script src="valid.js"></script>
+  <div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Login</header>
+      <form action="#">
+        <input type="password" id="password" placeholder="Enter password">
+        <input type="button" class="button" value="Login" onclick="checkPassword()">
+        <p id="message"></p>
+      </form>
+    </div>
+    </div>
+  </div>
+
+
+  <script src="valid.js"></script>
 </body>
 </html>
