@@ -5,7 +5,7 @@
 		if (password === "lexus1992") {
 		  window.location.href = "video.html";
 		} else {
-		  document.getElementById("message").innerHTML = "Incorrect code. Please try again.";
+		  document.getElementById("message").innerHTML = "Incorrect code. Please take code or pay for code.";
 		}
 	  }
 	  
