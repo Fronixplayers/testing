@@ -1,6 +1,7 @@
 const chatBody = document.querySelector(".chat-body");
 const txtInput = document.querySelector("#txtInput");
 const send = document.querySelector(".send");
+const loadingEle=document.querySelector(".loading")
 
 send.addEventListener("click", () => renderUserMessage());
 
@@ -14,10 +15,12 @@ const renderUserMessage = () => {
   const userInput = txtInput.value;
   renderMessageEle(userInput, "user");
   txtInput.value = "";
+  toggleLoading(false);
   setTimeout(() => {
     renderChatbotResponse(userInput);
     setScrollPosition();
-  }, 600);
+    toggleLoading(true);
+  }, 1200);
 };
 
 const renderChatbotResponse = (userInput) => {
@@ -48,3 +51,5 @@ const setScrollPosition = () => {
     chatBody.scrollTop = chatBody.scrollHeight;
   }
 };
+
+const toggleLoading=(show)=>loadingEle.classList.toggle("hide",show)
