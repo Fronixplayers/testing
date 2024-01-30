@@ -2,7 +2,7 @@
 
 	function checkPassword() {
 		var password = document.getElementById("password").value;
-		if (password === "gnv2044") {
+		if (password === "gnv2005") {
 		  window.location.href = "video.html";
 		} else {
 		  document.getElementById("message").innerHTML = "Incorrect code. Please take code or pay for code.";
